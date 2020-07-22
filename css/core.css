@@ -255,4 +255,21 @@ video {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.port-nav li {
+  display: inline;
+  font-size: 14px;
+  color: black;
+  margin: 0px 28px;
+  letter-spacing: 1px;
+}
+
+.port-nav a {
+  text-decoration: none;
+}
+
+.port-nav li .all {
+  text-decoration-line: underline;
 }
