@@ -225,8 +225,46 @@ video {
   margin: 0px 20px;
 }
 
+.projects {
+  margin-top: 180px;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+.projects a {
+  color: white;
+  text-decoration: none;
+}
+
+.projects i {
+  padding-top: 30px;
+  color: white;
+  width: 159px;
+  font-size: 15px;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  25%,
+  50%,
+  75%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
+}
+
 .headline-title {
-  margin-top: 330px;
+  margin-top: 110px;
   color: black;
   text-transform: uppercase;
 }
@@ -262,14 +300,15 @@ video {
   display: inline;
   font-size: 14px;
   color: black;
-  margin: 0px 28px;
   letter-spacing: 1px;
+}
+
+.port-nav ul a {
+  margin: 0px 28px;
+  display: inline-block;
 }
 
 .port-nav a {
   text-decoration: none;
 }
 
-.port-nav li .all {
-  text-decoration-line: underline;
-}
