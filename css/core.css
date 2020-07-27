@@ -150,12 +150,12 @@ body
 }
 
 video {
-    position: absolute;
-    height: 974px;
-    top: 0px;
-    width: 100%;
-    object-fit: cover;
-    z-index: -5;
+  position: absolute;
+  height: 974px;
+  top: 0px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -5;
 }
 
 .main-title h1 {
@@ -179,18 +179,18 @@ video {
 }
 
 .hero-border {
-    width: 1791px;
-    height: 819px;
-    color: white;
-    border-style: solid;
-    opacity: 0.43;
-    border-width: 1px;
-    position: absolute;
-    z-index: -1;
-    width: 94%;
-    height: 80%;
-    left: 3%;
-    margin-top: -65px;
+  width: 1791px;
+  height: 819px;
+  color: white;
+  border-style: solid;
+  opacity: 0.43;
+  border-width: 1px;
+  position: absolute;
+  z-index: -1;
+  width: 94%;
+  height: 80%;
+  left: 3%;
+  margin-top: -65px;
 }
 
 .main-title .container a {
@@ -274,7 +274,6 @@ video {
 
 .headline p {
   padding-top: 15px;
-
   color: black;
   font-size: 15px;
   line-height: 1.75rem;
@@ -286,7 +285,7 @@ video {
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 15px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .port-nav li {
@@ -305,3 +304,48 @@ video {
   text-decoration: none;
 }
 
+.building {
+  float: left;
+  width: 25%;
+  position: relative;
+}
+
+.portfolio-buildings img {
+  height: 667px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.portfolio-buildings h4 {
+  position: absolute;
+  bottom: -15px;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+  height: 50px;
+}
+
+
+.quote p {
+  padding-top: 15px;
+  color: black;
+  font-size: 15px;
+  line-height: 1.75rem;
+  letter-spacing: 0.5px;
+  margin: auto;
+  max-width: 1020px;
+  padding: 30px 55px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 1.3em;
+}
+
+.quote cite {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
