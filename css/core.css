@@ -157,6 +157,7 @@ video {
   height: 100%;
   object-fit: cover;
   z-index: -5;
+  margin-left: -15px;
 }
 
 .main-title h1 {
@@ -309,11 +310,12 @@ video {
   float: left;
   width: 25%;
   position: relative;
-  
+  overflow: hidden;
+  padding: 0 !important;
 }
 
 .portfolio-buildings img {
-  height: 667px;
+  height: 703px;
   object-fit: cover;
   width: 100%;
   display: block;
@@ -335,7 +337,7 @@ video {
   bottom: 0px;
   background-color: rgba(0,0,0,.8);
   color: white;
-  width: 100%;
+  width: 101%;
   height: 115px;
   text-align: center;
   text-transform: uppercase;
@@ -343,10 +345,14 @@ video {
   font-weight: 700;
   align-self: center;
   vertical-align: middle;
+  transition: all .25s ease-in-out;
+  display: table;
 }
 
-.portfolio-buildings .address-list {
-  transform: translateY(50%);
+.portfolio-buildings .listing > .address-list {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
 }
 
 .portfolio-buildings .dot {
@@ -360,10 +366,14 @@ video {
 }
 
 .portfolio-buildings .img-wrapper {
-  overflow: hidden;
+  transition: all .25s ease-in-out;
 }
 
-.portfolio-buildings img:hover {
+.list-wrapper:hover > .img-wrapper {
+  transform: scale(1.1);
+}
+
+.list-wrapper:hover > .listing {
   transform: scale(1.1);
 }
 
@@ -385,4 +395,8 @@ video {
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
+}
+
+.quote {
+  margin-top: 50px;
 }
