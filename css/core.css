@@ -396,7 +396,7 @@ text-align: center;
 .coming-soon {
   opacity: 1;
   background-color: black;
-
+  cursor: default;
 }
 
 .coming-soon p {
@@ -430,7 +430,8 @@ text-align: center;
 
 .residence-placeholder {
   height: 703;
-  background-color: rgb(255, 240, 221);
+  background-color: rgb(255, 253, 234);
+
   display: block;
   float: left;
   width: 25%;
