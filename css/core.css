@@ -197,6 +197,12 @@ video {
   margin-top: -65px;
 }
 
+@media (max-width: 1000px) {
+  .hero-border { 
+    display: none;
+  }
+}
+
 .main-title .container a {
   color: white;
   text-decoration: none;
@@ -222,6 +228,11 @@ video {
   margin: 0px 20px;
 }
 
+.projects a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .projects {
   margin-top: 200px;
   margin-bottom: auto;
@@ -232,7 +243,6 @@ video {
 
 .projects a {
   color: white;
-  text-decoration: none;
 }
 
 .projects i {
@@ -242,6 +252,7 @@ video {
   font-size: 15px;
   bottom: 0px;
 }
+
 
 .bounce {
   animation: bounce 2s infinite;
@@ -382,12 +393,50 @@ text-align: center;
   transition: all .25s ease-in-out;
 }
 
+.coming-soon {
+  opacity: 1;
+  background-color: black;
+
+}
+
+.coming-soon p {
+  color: white;
+  top: 38%;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  opacity: 0;
+  text-transform: uppercase;
+}
+
+.list-wrapper .coming-soon:hover > p {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.list-wrapper .coming-soon:hover > .img-wrapper {
+  opacity: 0.2;
+  transition: opacity 0.2s ease-in-out;
+}
+
 .list-wrapper:hover > .img-wrapper {
   transform: scale(1.1);
 }
 
 .list-wrapper:hover > .listing {
   transform: scale(1.1);
+}
+
+.residence-placeholder {
+  height: 703;
+  background-color: rgb(255, 240, 221);
+  display: block;
+  float: left;
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  padding: 0 !important;
 }
 
 .quote p {
@@ -408,8 +457,4 @@ text-align: center;
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
-}
-
-.quote {
-  margin-top: 50px;
 }
