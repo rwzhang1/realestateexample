@@ -180,6 +180,7 @@ video {
   color: white;
   font-weight: inherit;
   letter-spacing: 3px;
+  margin-bottom: 30px;
 }
 
 .hero-border {
@@ -234,11 +235,11 @@ video {
 }
 
 .projects {
-  margin-top: 200px;
+  margin-top: 150px;
   margin-bottom: auto;
   text-transform: uppercase;
   font-size: 11px;
-  padding-bottom: 70px;
+  padding-bottom: 125px;
 }
 
 .projects a {
@@ -270,7 +271,7 @@ video {
     transform: translateY(-20px);
   }
   60% {
-    transform: translateY(-12px);
+    transform: translateY(-8px);
   }
 }
 
@@ -445,17 +446,86 @@ text-align: center;
   color: black;
   font-size: 15px;
   line-height: 1.75rem;
-  letter-spacing: 0.5px;
   margin: auto;
-  max-width: 1020px;
+  max-width: 1050px;
   padding: 30px 55px;
   font-size: 24px;
   letter-spacing: 2px;
-  line-height: 1.3em;
+  line-height: 1.4em;
+  font-weight: 330;
 }
 
 .quote cite {
   font-size: 13px;
   font-style: normal;
   font-weight: 700;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials button {
+  padding: 15px 30px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
+  border-style: solid;
+  border-color: rgb(25, 25, 25);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+
+.testimonials button:hover {
+  color: white;
+  background-color: rgb(25, 25, 25);
+  transition: all .25s ease-in-out;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  background: rgb(25, 25, 25);
+  padding: 75px 0px;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 50px 0px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.footer-nav a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav .dot {
+  height: 3px;
+  width: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: 2px;
+  margin: 0px 5px;
 }
