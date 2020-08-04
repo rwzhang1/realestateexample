@@ -1,0 +1,214 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  background: white;
+  color: black;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+.navigation {
+  height: 138px;
+}
+
+#menuToggle
+{
+  
+  margin-top: -196px;
+  float: right;
+  display: inline-block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  height: 138px;
+  overflow: none;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: white;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: rgb(175, 175, 175);
+}
+
+
+#menuToggle input
+{
+  margin-right: 150px;
+  float: right;
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 2px;
+  margin-bottom: 10px;
+  position: relative;
+  margin-right: 150px;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(5px, 3px);
+  background: white;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, 3px);
+}
+
+#menu
+{
+  position: absolute;
+  display: inline;
+  width: 1200px;
+  margin: -166px 0 0 -1200px;
+  padding: 50px;
+  background: transparent;
+  padding-top: 125px;
+  visibility: hidden;
+  opacity: 0;
+  
+  background: transparent;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(10%, 0);
+  transition: visibility 0s, opacity 0s linear;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+  display: inline-block;
+  margin-right: 50px;
+  float: right;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0%, 0);
+  transition: all .35s ease-in;
+}
+
+#menu .ig {
+  margin-left: -40px;
+}
+
+.container-fluid img {
+  position: absolute;
+  height: 974px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -5;
+  margin-left: -15px;
+}
+
+.main-title h1 {
+  position: relative;
+  margin-top: 200px;
+  padding-top: 200px;
+  font-size: 5vw;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-title h2 {
+  font-weight: 200;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+  margin-top: 0px;
+  color: white;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+
+.hero-border {
+  width: 1791px;
+  height: 819px;
+  color: white;
+  border-style: solid;
+  opacity: 0.43;
+  border-width: 1px;
+  position: absolute;
+  z-index: -1;
+  width: 94%;
+  height: 80%;
+  left: 3%;
+  margin-top: -65px;
+}
+
+.asd p{
+  position: absolute;
+  bottom: -50px;
+}
