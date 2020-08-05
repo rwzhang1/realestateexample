@@ -9,11 +9,15 @@ body
 
 .navigation {
   height: 138px;
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  float: right;
 }
 
 #menuToggle
 {
-  
+  /* background-color: black;
   margin-top: -196px;
   float: right;
   display: inline-block;
@@ -26,7 +30,7 @@ body
   z-index: 1;
   
   -webkit-user-select: none;
-  user-select: none;
+  user-select: none; */
 }
 
 #menuToggle a
@@ -72,7 +76,7 @@ body
   position: relative;
   margin-right: 150px;
   
-  background: white;
+  background: black;
   border-radius: 3px;
   
   z-index: 1;
@@ -159,33 +163,34 @@ body
   margin-left: -40px;
 }
 
+
+
+.testing {
+  position: fixed;
+  top: 0;
+}
+
 video {
-  position: absolute;
-  height: 974px;
-  top: 0px;
+  position: relative;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   z-index: -5;
-  margin-left: -15px;
+  height: 100vh;
 }
 
 .main-title h1 {
   position: relative;
-  margin-top: 200px;
-  padding-top: 150px;
   font-size: 5vw;
   letter-spacing: 8px;
-  margin-bottom: 10px;
   color: white;
   font-weight: 400;
+  margin-top: 4em;
 }
 
 .main-title h2 {
   font-weight: 200;
   font-size: 2.5vw;
   text-transform: uppercase;
-  margin-top: 0px;
   color: white;
   font-weight: inherit;
   letter-spacing: 3px;
@@ -193,8 +198,6 @@ video {
 }
 
 .hero-border {
-  width: 1791px;
-  height: 819px;
   color: white;
   border-style: solid;
   opacity: 0.43;
@@ -202,33 +205,28 @@ video {
   position: absolute;
   z-index: -1;
   width: 94%;
-  height: 80%;
+  height: 90%;
   left: 3%;
-  margin-top: -65px;
+  margin-top: 50px;
 }
-
-@media (max-width: 1000px) {
-  .hero-border { 
-    display: none;
-  }
-}
-
-.main-title .container a {
+.main-title a {
   color: white;
   text-decoration: none;
   font-size: 18px;
   z-index: 6;
 }
-.main-title .container a:hover {
+.main-title a:hover {
   font-weight: 550;
+  text-decoration: none;
+  color: white;
 }
 
-.main-title .container li {
+.main-title li {
   display: inline;
   z-index: 6;
 }
 
-.main-title .container .dot {
+.main-title .dot {
   height: 5px;
   width: 5px;
   background-color: #bbb;
@@ -244,11 +242,9 @@ video {
 }
 
 .projects {
-  padding-top: 150px;
-  margin-bottom: auto;
+
   text-transform: uppercase;
   font-size: 11px;
-  padding-bottom: 115px;
   position: relative;
 }
 
@@ -289,6 +285,10 @@ video {
   60% {
     transform: translateY(-8px);
   }
+}
+
+.headline {
+  display: block;
 }
 
 .headline-title {
