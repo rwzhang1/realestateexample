@@ -188,7 +188,7 @@ body
 .main-title h1 {
   margin-top: 30vh;
   position: relative;
-  font-size: 5vw;
+  font-size: calc(20px + 4vw);
   letter-spacing: 8px;
   color: white;
   font-weight: 400;
@@ -198,7 +198,7 @@ body
 
 .main-title h2 {
   font-weight: 200;
-  font-size: 2.5vw;
+  font-size: calc(15px + 2vw);
   text-transform: uppercase;
   margin-top: 0px;
   color: white;
