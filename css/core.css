@@ -5,32 +5,30 @@ body
   background: white;
   color: black;
   font-family: "Avenir Next", "Avenir", sans-serif;
+  overflow-x: hidden;
 }
 
 .navigation {
   height: 138px;
-  position: absolute;
-  z-index: 10;
-  background-color: black;
-  float: right;
 }
 
 #menuToggle
 {
-  /* background-color: black;
-  margin-top: -196px;
+  margin-top: 10px;
   float: right;
   display: inline-block;
   position: relative;
-  top: 50px;
-  left: 50px;
+  margin-top: 2vh;
+  top: 3vh;
+  left: 5vh;
   height: 138px;
   overflow: none;
+  width: 15vh;
   
   z-index: 1;
   
   -webkit-user-select: none;
-  user-select: none; */
+  user-select: none;
 }
 
 #menuToggle a
@@ -38,17 +36,18 @@ body
   text-decoration: none;
   color: white;
   
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: rgb(175, 175, 175);
 }
 
 
 #menuToggle input
 {
+  overflow: hidden;
   margin-right: 150px;
   float: right;
   display: block;
@@ -76,7 +75,7 @@ body
   position: relative;
   margin-right: 150px;
   
-  background: black;
+  background: white;
   border-radius: 3px;
   
   z-index: 1;
@@ -117,6 +116,7 @@ body
 
 #menu
 {
+  overflow: hidden;
   position: absolute;
   display: inline;
   width: 1200px;
@@ -156,59 +156,80 @@ body
   visibility: visible;
   opacity: 1;
   transform: translate(0%, 0);
-  transition: all .3s ease-in;
+  transition: all .35s ease-in;
 }
 
 #menu .ig {
   margin-left: -40px;
 }
 
-
-
-.testing {
-  position: fixed;
-  top: 0;
-}
-
 video {
-  position: relative;
+  position: fixed;
   width: 100%;
   object-fit: cover;
   z-index: -5;
   height: 100vh;
 }
 
+.wrapper .spacer {
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  float: left;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+  margin-top: -158px;
+}
+
+.container-fluid img {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -500;
+  margin-left: -15px;
+}
+
 .main-title h1 {
+  margin-top: 15vh;
   position: relative;
-  font-size: 5vw;
+  font-size: calc(20px + 4vw);
   letter-spacing: 8px;
   color: white;
   font-weight: 400;
-  margin-top: 4em;
+  text-transform: uppercase;
+  opacity: 1;
 }
 
 .main-title h2 {
   font-weight: 200;
-  font-size: 2.5vw;
+  font-size: calc(15px + 2vw);
   text-transform: uppercase;
+  margin-top: 0px;
   color: white;
-  font-weight: inherit;
+  font-weight: lighter;
   letter-spacing: 3px;
   margin-bottom: 30px;
+  opacity: 1;
 }
 
 .hero-border {
-  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.43);
   border-style: solid;
-  opacity: 0.43;
   border-width: 1px;
   position: absolute;
-  z-index: -1;
-  width: 94%;
-  height: 90%;
-  left: 3%;
-  margin-top: 50px;
+  z-index: 1;
+  width: 90%;
+  height: 80%;
+  left: 5%;
+  right: 5%;
+  margin-top: 8%;
+  bottom: 6%;
+  overflow: hidden;
 }
+
 .main-title a {
   color: white;
   text-decoration: none;
@@ -242,20 +263,15 @@ video {
 }
 
 .projects {
-
+  margin-top: 20vh;
   text-transform: uppercase;
   font-size: 11px;
   position: relative;
 }
 
-@media (max-height:650px) {
-  .projects { 
-    display: none;
-  }
-}
-
 .projects a {
   color: white;
+  z-index: 10;
 }
 
 .projects i {
@@ -289,6 +305,10 @@ video {
 
 .headline {
   display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  text-transform: uppercase;
 }
 
 .headline-title {
@@ -335,9 +355,6 @@ video {
   text-decoration: none;
 }
 
-.port-nav a {
-  
-}
 
 .port-nav .all {
   border-bottom: rgb(116, 116, 116);
