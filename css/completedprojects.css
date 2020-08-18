@@ -163,14 +163,6 @@ body
   margin-left: -40px;
 }
 
-video {
-  position: fixed;
-  width: 100%;
-  object-fit: cover;
-  z-index: -5;
-  height: 100vh;
-}
-
 .wrapper .spacer {
   top: 0px;
   height: 100vh;
@@ -182,7 +174,7 @@ video {
   margin-top: -158px;
 }
 
-.container-fluid img {
+.wrapper .container-fluid img {
   position: absolute;
   top: 0px;
   width: 100%;
@@ -190,6 +182,7 @@ video {
   object-fit: cover;
   z-index: -5;
   margin-left: -15px;
+  padding: 0px;
 }
 
 .main-title h1 {
@@ -209,26 +202,7 @@ video {
   text-transform: uppercase;
   margin-top: 0px;
   color: white;
-  font-weight: lighter;.wrapper .spacer {
-  top: 0px;
-  height: 100vh;
-  width: 100%;
-  float: left;
-  display: block;
-  object-fit: cover;
-  opacity: 0;
-  margin-top: -158px;
-}
-
-.container-fluid img {
-  position: absolute;
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -5;
-  margin-left: -15px;
-}
+  font-weight: lighter;
   letter-spacing: 3px;
   margin-bottom: 30px;
   opacity: 1;
@@ -247,79 +221,6 @@ video {
   margin-top: 8%;
   bottom: 6%;
   overflow: hidden;
-}
-
-.main-title a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  z-index: 6;
-}
-.main-title a:hover {
-  font-weight: 550;
-  text-decoration: none;
-  color: white;
-}
-
-.main-title li {
-  display: inline;
-  z-index: 6;
-}
-
-.main-title .dot {
-  height: 5px;
-  width: 5px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  vertical-align: 3px;
-  margin: 0px 20px;
-}
-
-.projects a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-.projects {
-  margin-top: 20vh;
-  text-transform: uppercase;
-  font-size: 11px;
-  position: relative;
-}
-
-.projects a {
-  color: white;
-  z-index: 10;
-}
-
-.projects i {
-  padding-top: 30px;
-  color: white;
-  width: 159px;
-  font-size: 15px;
-  bottom: 0px;
-}
-
-
-.bounce {
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  25%,
-  50%,
-  75%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-20px);
-  }
-  60% {
-    transform: translateY(-8px);
-  }
 }
 
 .headline {
@@ -348,40 +249,23 @@ video {
 .headline p {
   padding-top: 15px;
   color: black;
-  font-size: 15px;
-  line-height: 1.75rem;
-  letter-spacing: 0.5px;
-  max-width: 1000px;
-}
-
-.portfolio h3 {
-  margin-top: 40px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  margin-bottom: 25px;
-}
-
-.port-nav li {
-  display: inline;
-  font-size: 14px;
-  color: black;
+  font-size: 18px;
+  line-height: 2rem;
   letter-spacing: 1px;
+  max-width: 1000px;
+  margin-bottom: 30px;
+  font-weight: 200;
 }
 
-.port-nav ul a {
-  margin: 0px 28px;
-  display: inline-block;
-  text-decoration: none;
+.body .container-fluid {
+  padding: 0px;
 }
 
-
-.port-nav .all {
-  border-bottom: rgb(116, 116, 116);
-  border-bottom-style: solid;
-  padding-bottom: 5px;
-  border-bottom-width: 2px;
-  font-weight: 700;
+.all-buildings {
+  background-color: black;
+  background-size: 105%;
+  margin: 0;
+  padding: 0;
 }
 
 .building {
@@ -405,7 +289,7 @@ video {
   text-align: center;
 }
 
-.body .full-address {
+.body .building-info {
   color: rgb(168, 168, 168);
   font-size: 11px;
 }
@@ -452,23 +336,6 @@ text-align: center;
   transition: all .25s ease-in-out;
 }
 
-.coming-soon {
-  opacity: 1;
-  background-color: black;
-  cursor: default;
-}
-
-.coming-soon p {
-  color: white;
-  top: 38%;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  font-size: 40px;
-  opacity: 0;
-  text-transform: uppercase;
-}
-
 .list-wrapper .coming-soon:hover > p {
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
@@ -487,62 +354,8 @@ text-align: center;
   transform: scale(1.1);
 }
 
-.residence-placeholder {
-  height: 703;
-  background-color: rgb(255, 253, 234);
-
-  display: block;
-  float: left;
-  width: 25%;
-  position: relative;
-  overflow: hidden;
-  padding: 0 !important;
-}
-
-.quote p {
-  padding-top: 15px;
-  color: black;
-  font-size: 15px;
-  line-height: 1.75rem;
-  margin: auto;
-  max-width: 1050px;
-  padding: 30px 55px;
-  font-size: 24px;
-  letter-spacing: 2px;
-  line-height: 1.4em;
-  font-weight: 330;
-}
-
-.quote cite {
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 700;
-}
-
-.testimonials {
-  text-align: center;
-}
-
-.testimonials button {
-  padding: 15px 30px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(25, 25, 25);
-  border-style: solid;
-  border-color: rgb(25, 25, 25);
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 14px;
-}
-
-.testimonials button:hover {
-  color: white;
-  background-color: rgb(25, 25, 25);
-  transition: all .25s ease-in-out;
-}
-
 .footer {
   text-align: center;
-  margin-top: 50px;
   background: rgb(25, 25, 25);
   padding: 75px 0px;
   font-size: 20px;
