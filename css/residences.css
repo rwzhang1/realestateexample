@@ -155,12 +155,16 @@ body
   letter-spacing: 2px;
 }
 
+#menuToggle ul {
+  transition: all .55s ease-in-out;
+}
+
 #menuToggle input:checked ~ ul
 {
   visibility: visible;
   opacity: 1;
   transform: translate(0%, 0);
-  transition: all .35s ease-in;
+  transition: all .55s ease-in;
 }
 
 #menu .ig {

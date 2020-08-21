@@ -230,20 +230,8 @@ body
 .headline {
   display: block;
   position: relative;
-  text-align: center;
+  text-align: left;
   margin: auto;
-}
-
-.headline-title {
-  color: black;
-  text-transform: uppercase;
-  margin-top: 40px;
-}
-
-.headline-title h2 {
-  margin: 5px;
-  letter-spacing: 2px;
-  font-size: calc(15px + 1vh);
 }
 
 .container .headline {
@@ -263,93 +251,58 @@ body
   font-weight: 200;
 }
 
-.reg h2 {
-  margin: 5px;
-  letter-spacing: 3px;
-  font-size: calc(15px + 1vh);
-  color: black;
-  text-transform: uppercase;
-  margin-top: 40px;
+.video {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.reg a {
-  text-decoration: none;
+.quote p {
+  padding-top: 15px;
   color: black;
-  text-decoration: underline;
-}
-
-.reg a:hover {
-  color: black;
-}
-
-.reg p {
-  margin: 0;
-  padding: 0;
   font-size: 15px;
-  letter-spacing: 0.5px;
-  line-height: 20px;
-}
-
-select {
-  width: 51%;
-  padding: 8px 0px;
-  padding-left: 11px;
-  background-color: #e9e9e9;
-  border-style: none;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-
-.region {
-  margin-bottom: 15px;
-}
-
-input {
-  width: 51%;
-}
-
-#fname {
-  width: 24.75%;
-  margin-top: 3vh;
-  margin-right: 10px;
-}
-
-#lname {
-  width: 24.75%;
-}
-
-input[type=text] {
-  padding: 8px 0px;
-  padding-left: 15px;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  background-color: #e9e9e9;
-  border-style: none;
-  letter-spacing: 1px;
-}
-
-input[type=submit] {
-  text-transform: uppercase;
-  width: 51%;
-  padding: 16px;
-  margin-bottom: 40px;
-  background-color: white;
-  color: rgb(25, 25, 25);
-  border-style: none;
+  line-height: 1.75rem;
+  margin: auto;
+  max-width: 1050px;
+  padding: 30px 55px;
+  font-size: 24px;
   letter-spacing: 2px;
+  line-height: 1.4em;
+  font-weight: 330;
+}
+
+.quote cite {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials button {
+  padding: 15px 30px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(25, 25, 25);
   border-style: solid;
   border-color: rgb(25, 25, 25);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 14px;
 }
 
-input[type=submit]:hover {
-  background-color: rgb(25, 25, 25);
+.testimonials button:hover {
   color: white;
+  background-color: rgb(25, 25, 25);
   transition: all .25s ease-in-out;
 }
 
 .footer {
   text-align: center;
+  margin-top: 50px;
   background: rgb(25, 25, 25);
   padding: 75px 0px;
   font-size: 20px;
