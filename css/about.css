@@ -8,6 +8,29 @@ body
   overflow-x: hidden;
 }
 
+.logo-title {
+  display: inline-block;
+  margin-top: 2vh;
+  top: 2vh;
+  margin-left: 50px;
+  z-index: 100;
+  overflow: none;
+  position: relative;
+  text-align: center;
+}
+
+.logo-title a {
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  line-height: 0px;
+}
+
+.logo-title a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .navigation {
   height: 138px;
 }
