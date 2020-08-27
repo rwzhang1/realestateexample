@@ -380,20 +380,29 @@ video {
   color: black;
   letter-spacing: 1px;
 }
-
 .port-nav ul a {
   margin: 0px 28px;
   display: inline-block;
   text-decoration: none;
+  transition: all .3s ease-in-out;
 }
 
+.port-nav a:hover {
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+}
 
 .port-nav .all {
-  border-bottom: rgb(116, 116, 116);
+  border-bottom: rgba(116, 116, 116, 1);
   border-bottom-style: solid;
   padding-bottom: 5px;
   border-bottom-width: 2px;
   font-weight: 700;
+  animation: fadeIn 0.75s ease-in;
+}
+
+@keyframes fadeIn {
+  0%  { border-color: rgb(255, 255, 255, 0); }
 }
 
 .building {
