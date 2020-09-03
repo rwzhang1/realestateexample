@@ -235,7 +235,7 @@ video {
   font-weight: 400;
   text-transform: uppercase;
   opacity: 1;
-  animation: tfadeIn 0.2s ease-in;
+  animation: tfadeIn 0.75s ease-in;
   transform: translateY(1vh);
   transition: 0.75s;
   line-height: 0px;
@@ -382,8 +382,11 @@ video {
   font-size: 15px;
   line-height: 2.75rem;
   letter-spacing: 0.5px;
-  max-width: 1000px;
-  margin-bottom: 30px;
+  max-width: 1000px;;
+}
+
+.building-icon {
+  padding-top: 40px;
 }
 
 .portfolio h3 {
@@ -421,32 +424,11 @@ video {
 .nav-tabs {
   text-align:center !important;
   border-bottom: none !important;
+  padding: 0px 20px 20px 20px;
 }
 
 .nav-tabs a {
   border: none !important;
-}
-
-.port-nav a:visited {
-  text-decoration: none !important;
-  color: black !important;
-  font-weight: 750;
-  border-bottom: rgba(116, 116, 116, 1) !important;
-  border-bottom-style: solid !important;
-  padding-bottom: 5px !important;
-  border-bottom-width: 2px !important;
-  animation: fadeIn 0.35s ease-out;
-}
-
-.port-nav a:active {
-  text-decoration: none !important;
-  color: black !important;
-  font-weight: 750;
-  border-bottom: rgba(116, 116, 116, 1) !important;
-  border-bottom-style: solid !important;
-  padding-bottom: 5px !important;
-  border-bottom-width: 2px !important;
-  animation: fadeIn 0.35s ease-out;
 }
 
 .port-nav a:focus {
