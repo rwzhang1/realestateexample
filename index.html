@@ -18,15 +18,49 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-        <script>
-            function jump()
-            {
-                window.location.href = '#building-icon';
-            }
-            </script>
+    <script>
+        function allfocus() {
+            document.getElementById('gall').focus;
+        }
+    </script>
+    <script>
+        function jump() {
+            document.getElementById('building-icon').scrollIntoView(true);
+        }
+    </script>
+    <script>
+        function getny() {
+            document.getElementById("gny").focus();
+        }
+    </script>
+    <script>
+        function getnj() {
+            document.getElementById("gnj").focus();
+        }
+    </script>
+    <script>
+        function getdc() {
+            document.getElementById("gdc").focus();
+        }
+    </script>
+    <script>
+        function getph() {
+            document.getElementById("gph").focus();
+        }
+    </script>
+    <script>
+        function getse() {
+            document.getElementById("gse").focus();
+        }
+    </script>
+    <script>
+        function getla() {
+            document.getElementById("gla").focus();
+        }
+    </script>
 </head>
 
-<body>
+<body onload="allfocus()">
     <div class="head-wrap">
         <nav role="navigation">
             <div class="logo-title">
@@ -92,17 +126,17 @@
                     </center>
                     </br></br>
                     <ul>
-                        <a data-toggle="tab" href="#ny" onclick="jump()">New York</a>
+                        <a data-toggle="tab" href="#ny" onclick="getny(); jump();">New York</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#nj" onclick="jump()">New Jersey</a>
+                        <a data-toggle="tab" href="#nj" onclick="getnj(); jump();">New Jersey</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#dc" onclick="jump()">DC Metro</a>
+                        <a data-toggle="tab" href="#dc" onclick="getdc(); jump();">DC Metro</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#ph" onclick="jump()">Philadelphia</a>
+                        <a data-toggle="tab" href="#ph" onclick="getph(); jump();">Philadelphia</a>
                         </br></br>
-                        <a data-toggle="tab" href="#se" onclick="jump()">Seattle</a>
+                        <a data-toggle="tab" href="#se" onclick="getse(); jump();">Seattle</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#la" onclick="jump()">Los Angeles</a>
+                        <a data-toggle="tab" href="#la" onclick="getla(); jump();">Los Angeles</a>
                     </ul>
                     <div class="projects">
                         <center>
@@ -168,13 +202,13 @@
 
 
             <ul class="port-nav nav-tabs">
-                <li><a data-toggle="tab" href="#all">All</a></li>
-                <li><a data-toggle="tab" href="#ny">New York</a></li>
-                <li><a data-toggle="tab" href="#nj">New Jersey</a></li>
-                <li><a data-toggle="tab" href="#dc">DC Metro</a></li>
-                <li><a data-toggle="tab" href="#ph">Philadelphia</a></li>
-                <li><a data-toggle="tab" href="#se">Seattle</a></li>
-                <li><a data-toggle="tab" href="#la">Los Angeles</a></li>
+                <li><a data-toggle="tab" id="gall" href="#all">All</a></li>
+                <li><a data-toggle="tab" id="gny" href="#ny">New York</a></li>
+                <li><a data-toggle="tab" id="gnj" href="#nj">New Jersey</a></li>
+                <li><a data-toggle="tab" id="gdc" href="#dc">DC Metro</a></li>
+                <li><a data-toggle="tab" id="gph" href="#ph">Philadelphia</a></li>
+                <li><a data-toggle="tab" id="gse" href="#se">Seattle</a></li>
+                <li><a data-toggle="tab" id="gla" href="#la">Los Angeles</a></li>
             </ul>
 
             <div class="tab-content">
