@@ -6,7 +6,7 @@ body
 {
   margin: 0;
   padding: 0;
-  background: white;
+  background: rgb(255, 255, 255);
   color: black;
   font-family: "Avenir Next", "Avenir", sans-serif;
   overflow-x: hidden;
@@ -21,19 +21,21 @@ body
   overflow: none;
   position: relative;
   text-align: center;
+  text-decoration: none !important;
 }
 
 .logo-title a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: white;
   font-size: 3vh;
   line-height: 0px;
 }
 
 .logo-title a:hover {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
 }
+
 
 .navigation {
   height: 138px;
@@ -200,6 +202,8 @@ video {
   object-fit: cover;
   z-index: -5;
   height: 100vh;
+  background-color: grey;
+  opacity: 1;
 }
 
 .wrapper .spacer {
@@ -223,7 +227,7 @@ video {
 }
 
 .main-title h1 {
-  margin-top: 15vh;
+  margin-top: 25vh;
   position: relative;
   font-size: calc(20px + 4vw);
   letter-spacing: 8px;
@@ -231,6 +235,14 @@ video {
   font-weight: 400;
   text-transform: uppercase;
   opacity: 1;
+  animation: tfadeIn 0.75s ease-in;
+  transform: translateY(1vh);
+  transition: 0.75s;
+  line-height: 0px;
+}
+
+@keyframes tfadeIn {
+  0%  { opacity: 0; }
 }
 
 .main-title h2 {
@@ -241,8 +253,16 @@ video {
   color: white;
   font-weight: lighter;
   letter-spacing: 3px;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
   opacity: 1;
+  animation: t2fadeIn 1s ease-in;
+  transform: translateY(6vh);
+  transition: 1.25s;
+  transition-delay: 0.3s;
+}
+
+@keyframes t2fadeIn{
+  0% { opacity: 0; }
 }
 
 .hero-border {
@@ -293,7 +313,7 @@ video {
 }
 
 .projects {
-  margin-top: 20vh;
+  margin-top: 15vh;
   text-transform: uppercase;
   font-size: 11px;
   position: relative;
@@ -360,9 +380,13 @@ video {
   padding-top: 15px;
   color: black;
   font-size: 15px;
-  line-height: 1.75rem;
+  line-height: 2.75rem;
   letter-spacing: 0.5px;
-  max-width: 1000px;
+  max-width: 1000px;;
+}
+
+.building-icon {
+  padding-top: 40px;
 }
 
 .portfolio h3 {
@@ -371,28 +395,55 @@ video {
   letter-spacing: 1.5px;
   font-size: 15px;
   margin-bottom: 25px;
+  font-weight: 700;
 }
 
-.port-nav li {
-  display: inline;
-  font-size: 14px;
-  color: black;
-  letter-spacing: 1px;
-}
-
-.port-nav ul a {
+.port-nav a {
+  text-decoration: none !important;
   margin: 0px 28px;
   display: inline-block;
-  text-decoration: none;
+  transition: all .3s ease-in-out;
+  font-size: 14px;
+  color: inherit;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
+.port-nav a:hover {
+  text-decoration: none;
+  font-weight: 750;
+  transition: all .3s ease-in-out;
+  color: inherit;
+}
 
-.port-nav .all {
-  border-bottom: rgb(116, 116, 116);
-  border-bottom-style: solid;
-  padding-bottom: 5px;
-  border-bottom-width: 2px;
-  font-weight: 700;
+.nav-tabs > li {
+  float: none !important;
+  display:inline-block !important;
+}
+
+.nav-tabs {
+  text-align:center !important;
+  border-bottom: none !important;
+  padding: 0px 20px 20px 20px;
+}
+
+.nav-tabs a {
+  border: none !important;
+}
+
+.port-nav a:focus {
+  text-decoration: none !important;
+  color: black !important;
+  font-weight: 750;
+  border-bottom: rgba(116, 116, 116, 1) !important;
+  border-bottom-style: solid !important;
+  padding-bottom: 5px !important;
+  border-bottom-width: 2px !important;
+  animation: fadeIn 0.35s ease-out;
+}
+
+@keyframes fadeIn {
+  0%  { opacity: 0; }
 }
 
 .building {
