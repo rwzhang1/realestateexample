@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Toll Brothers City Living | Home</title>
+    <title>Found Group | Home</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" type="text/css" media="screen" href="/css/core.css">
     <script src='main.js'></script>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel='shortcut icon' type='image/x-icon' href='/favicon/favicon-16x16.png' />
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon/favicon-16x16.png' />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -30,33 +30,18 @@
         }
     </script>
     <script>
-        function getny() {
-            document.getElementById("gny").focus();
+        function getap() {
+            document.getElementById("gap").focus();
         }
     </script>
     <script>
-        function getnj() {
-            document.getElementById("gnj").focus();
+        function gethl() {
+            document.getElementById("ghl").focus();
         }
     </script>
     <script>
-        function getdc() {
-            document.getElementById("gdc").focus();
-        }
-    </script>
-    <script>
-        function getph() {
-            document.getElementById("gph").focus();
-        }
-    </script>
-    <script>
-        function getse() {
-            document.getElementById("gse").focus();
-        }
-    </script>
-    <script>
-        function getla() {
-            document.getElementById("gla").focus();
+        function getth() {
+            document.getElementById("gth").focus();
         }
     </script>
 </head>
@@ -66,8 +51,7 @@
         <nav role="navigation">
             <div class="logo-title">
                 <a href="/">
-                    <i>Toll Brothers</i><br>
-                    City Living
+                    <img src="/images/Found-LOGO2W.png">
                 </a>
             </div>
             <div id="menuToggle">
@@ -100,10 +84,10 @@
                         <li>Availability</li>
                     </a>
                     <a href="/completed-projects.html">
-                        <li>Completed Projects</li>
+                        <li>Completed</li>
                     </a>
                     <a href="/residences.html#building-icon">
-                        <li>Portfolio</li>
+                        <li>Current Projects</li>
                     </a>
                 </ul>
             </div>
@@ -112,7 +96,7 @@
         <div class="wrapper">
             <img class="spacer" src="/images/testimonials-full2.jpg">
             <video class="container-fluid" loop autoplay muted data-src="images/ny-movie-full.mp4"
-                src="/images/ny-movie-full.mp4">
+                src="/images/Melbourne City Lights-H264 75.mov">
                 <video>
         </div>
 
@@ -123,21 +107,21 @@
                         <h1>City Living</h1>
                     </center>
                     <center>
-                        <h2>At its Finest</h2>
+                        <h2>Luxury</h2>
                     </center>
                     </br></br>
                     <ul>
-                        <a data-toggle="tab" href="#ny" onclick="getny(); jump();">New York</a>
+                        <a data-toggle="tab" href="#ap" onclick="getap(); jump();">Apartments</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#nj" onclick="getnj(); jump();">New Jersey</a>
+                        <a data-toggle="tab" href="#hl" onclick="gethl(); jump();">House & Land</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#dc" onclick="getdc(); jump();">DC Metro</a>
-                        <span class="dot"></span>
+                        <a data-toggle="tab" href="#th" onclick="getth(); jump();">Townhouses</a>
+                        <!--                    <span class="dot"></span>
                         <a data-toggle="tab" href="#ph" onclick="getph(); jump();">Philadelphia</a>
                         </br></br>
                         <a data-toggle="tab" href="#se" onclick="getse(); jump();">Seattle</a>
                         <span class="dot"></span>
-                        <a data-toggle="tab" href="#la" onclick="getla(); jump();">Los Angeles</a>
+                        <a data-toggle="tab" href="#la" onclick="getla(); jump();">Los Angeles</a> -->
                     </ul>
                     <div class="projects">
                         <center>
@@ -164,23 +148,16 @@
                     <div class="headline-title">
                         <center>
                             <h2>
-                                Distinctive Residences
-                            </h2>
-                            <h2>
-                                In the most dynamic urban markets in the nation
+                                The Found Difference
                             </h2>
                     </div>
                     </center>
                     <center>
                         <p>
-                            Toll Brothers City Living brings the same level of quality and finishes that you have come
-                            to
-                            expect
-                            from our homes to the most dynamic urban markets in the nation. Each beautifully crafted
-                            condominium
-                            community offers innovative architecture, elegant finishes, world-class amenities, and
-                            unequaled
-                            services that accentuate a lifestyle of luxury.
+                            Our mission is to deliver the best property purchase, property sale and property management
+                            experiences in Melbourne. With offices in Australia and South-East Asia, we not only work on
+                            small and large developments Australia-wide, but also cater to any demands for far-reaching
+                            markets.
                         </p>
                     </center>
                 </div>
@@ -196,7 +173,7 @@
             <div class="portfolio">
                 <center>
                     <h3 id="port">
-                        portfolio
+                        Current Projects
                     </h3>
                 </center>
             </div>
@@ -204,520 +181,714 @@
 
             <ul class="port-nav nav-tabs">
                 <li><a data-toggle="tab" id="gall" href="#all">All</a></li>
-                <li><a data-toggle="tab" id="gny" href="#ny">New York</a></li>
-                <li><a data-toggle="tab" id="gnj" href="#nj">New Jersey</a></li>
-                <li><a data-toggle="tab" id="gdc" href="#dc">DC Metro</a></li>
-                <li><a data-toggle="tab" id="gph" href="#ph">Philadelphia</a></li>
-                <li><a data-toggle="tab" id="gse" href="#se">Seattle</a></li>
-                <li><a data-toggle="tab" id="gla" href="#la">Los Angeles</a></li>
+                <li><a data-toggle="tab" id="gap" href="#ap">Apartments</a></li>
+                <li><a data-toggle="tab" id="ghl" href="#hl">House & Land</a></li>
+                <li><a data-toggle="tab" id="gth" href="#th">Townhouses</a></li>
             </ul>
 
             <div class="tab-content">
                 <div id="all" class="tab-pane fade in active">
                     <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
-                            <a href="/newyork/77-charlton">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="/camberwell">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/77charlton-thumbnail.jpg">
+                                        <img src="/images/apartments/555-Collins-Flipbook-11.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address"> 77 Charlton</span>
+                                            <span class="main-address"> 555 Colins</span>
                                             <br>
-                                            <span class="full-address"> Charlton Street
+                                            <span class="full-address"> 555 Colins Street
                                                 <span class="dot"></span>
-                                                New York, NY 10014</span>
+                                                Victoria, VIC 3000</span>
                                             <br>
-                                            <span class="neighbourhood">West Soho</span>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/new-york/91-leonard">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/91leonard1-thumbnail.jpg">
+                                        <img src="/images/apartments/Botanic.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">91 Leonard</span>
+                                            <span class="main-address">Botanic</span>
                                             <br>
-                                            <span class="full-address"> 91 Leonard street
+                                            <span class="full-address"> 25 Coventry Street
                                                 <span class="dot"></span>
-                                                New York, NY 10013</span>
+                                                Victoria, VIC 3006</span>
                                             <br>
-                                            <span class="neighbourhood">Tribeca</span>
+                                            <span class="neighbourhood">Southbank</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newyork/121-east-22nd">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/121east22nd1-thumb.jpg">
+                                        <img src="/images/apartments/clare.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">121 East 22nd</span>
+                                            <span class="main-address">Claremont Manor</span>
                                             <br>
-                                            <span class="full-address"> 121 East 22nd Street
+                                            <span class="full-address"> 7 Claremont Street
                                                 <span class="dot"></span>
-                                                New York, NY 10010</span>
+                                                Victoria, VIC 3141</span>
                                             <br>
-                                            <span class="neighbourhood">Gramercy</span>
+                                            <span class="neighbourhood">South Yarra</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newyork/the-sutton">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/sutton-1-thumb.jpg">
+                                        <img src="/images/apartments/hawthorn.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">The Sutton</span>
+                                            <span class="main-address">Hawthorn Club</span>
                                             <br>
-                                            <span class="full-address"> 959 First Ave
+                                            <span class="full-address"> 625 Glenferrie Road
                                                 <span class="dot"></span>
-                                                New York, NY 10022</span>
+                                                Victoria, VIC 3122</span>
                                             <br>
-                                            <span class="neighbourhood">Sutton Place</span>
+                                            <span class="neighbourhood">Hawthorn</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newjersey/1000-maxwell">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/1000maxwell-thumbnail.jpg">
+                                        <img src="/images/apartments/luma.jpeg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">1000 Maxwell</span>
+                                            <span class="main-address">Luma Windsor</span>
                                             <br>
-                                            <span class="full-address"> 1000 Maxwell Place
+                                            <span class="full-address"> 6 High Street
                                                 <span class="dot"></span>
-                                                Hoboken, NJ 07030</span>
+                                                Victoria, VIC 3181</span>
                                             <br>
-                                            <span class="neighbourhood">Hoboken</span>
+                                            <span class="neighbourhood">Windsor</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newjersey/1425-hudson">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/1425hudson1-thumb.jpg">
+                                        <img src="/images/apartments/newschar.png">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">1425 Hudson Street at Hudson Tea</span>
+                                            <span class="main-address">New Charsfield</span>
                                             <br>
-                                            <span class="full-address"> 1425 Hudson Street
+                                            <span class="full-address"> 478 Saint Kilda Road
                                                 <span class="dot"></span>
-                                                Hoboken, NJ 07030</span>
+                                                Victoria, VIC 3004</span>
                                             <br>
-                                            <span class="neighbourhood">Hoboken</span>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newjersey/10-provost">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/10provost-thumbnailv2.jpg">
+                                        <img src="/images/apartments/queensplace.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">10 Provost</span>
+                                            <span class="main-address">Queens Place</span>
                                             <br>
-                                            <span class="full-address"> 10 Provost Street
+                                            <span class="full-address"> 350 Queens Street
                                                 <span class="dot"></span>
-                                                Jersey City, NJ 07302</span>
+                                                Victoria, VIC 3000</span>
                                             <br>
-                                            <span class="neighbourhood">Jersey City</span>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/dc-metro/hampden-row">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/hampdenrow-thumbnail.jpg">
+                                        <img src="/images/apartments/swanston.jpeg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">Hampden Row</span>
+                                            <span class="main-address">Swanston Central</span>
                                             <br>
-                                            <span class="full-address"> 4915 Hampden Lane
+                                            <span class="full-address"> 168 Victoria Street
                                                 <span class="dot"></span>
-                                                Bethesda, MD 20814</span>
+                                                Victoria, VIC 3053</span>
                                             <br>
-                                            <span class="neighbourhood">Downtown Bethesda</span>
+                                            <span class="neighbourhood">Carlton</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="" onclick="return false;">
                                 <div class="list-wrapper">
-                                    <div class="coming-soon">
-                                        <p>Coming Soon</p>
-                                        <div class="img-wrapper">
-                                            <img src="/images/jewelersrow-thumbnail.jpg">
-                                        </div>
-                                        <div class="listing">
-                                            <div class="address-list">
-                                                <span class="main-address">708 Sansom Street</span>
-                                                <br>
-                                                <span class="full-address"> 708 Sansom Street
-                                                    <span class="dot"></span>
-                                                    Philadelphia, PA 19106</span>
-                                                <br>
-                                                <span class="neighbourhood">Washington Square West</span>
-                                            </div>
+                                    <div class="img-wrapper">
+                                        <img src="/images/apartments/thefawk.jpeg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">The Fawkner</span>
+                                            <br>
+                                            <span class="full-address"> 499 Saint Kilda Road
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3004</span>
+                                            <br>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="" onclick="return false;">
                                 <div class="list-wrapper">
-                                    <div class="coming-soon">
-                                        <p>Coming Soon</p>
-                                        <div class="img-wrapper">
-                                            <img src="/images/thumbnailv2.jpg">
-                                        </div>
-                                        <div class="listing">
-                                            <div class="address-list">
-                                                <span class="main-address">The Franklin</span>
-                                                <br>
-                                                <span class="full-address"> 2302 4th Ave
-                                                    <span class="dot"></span>
-                                                    Seattle, WA 98109</span>
-                                                <br>
-                                                <span class="neighbourhood">Belltown</span>
-                                            </div>
+                                    <div class="img-wrapper">
+                                        <img src="/images/apartments/westside.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">West Side Place Ritz Carlton</span>
+                                            <br>
+                                            <span class="full-address"> 250 Spencer Street
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3000</span>
+                                            <br>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="" onclick="return false;">
                                 <div class="list-wrapper">
-                                    <div class="coming-soon">
-                                        <p>Coming Soon</p>
-                                        <div class="img-wrapper">
-                                            <img src="/images/devon-thumbnailv2.jpg">
-                                        </div>
-                                        <div class="listing">
-                                            <div class="address-list">
-                                                <span class="main-address">The Devon</span>
-                                                <br>
-                                                <span class="full-address"> 888 Devon Ave
-                                                    <span class="dot"></span>
-                                                    Los Angeles, CA 90024</span>
-                                                <br>
-                                                <span class="neighbourhood">Westwood</span>
-                                            </div>
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/camberwell.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Camberwell House</span>
+                                            <br>
+                                            <span class="full-address"> 43 Range Street
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3124</span>
+                                            <br>
+                                            <span class="neighbourhood">Camberwell</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/bloomdale.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Bloomdale, Diggers Rest</span>
+                                            <br>
+                                            <span class="full-address"> Diggers Rest
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3427</span>
+                                            <br>
+                                            <span class="neighbourhood">Bloomdale</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/bloomdale.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Emerald Park</span>
+                                            <br>
+                                            <span class="full-address"> Emerald Park
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3029</span>
+                                            <br>
+                                            <span class="neighbourhood">Tarneit</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/saltwater.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Saltwater Coast</span>
+                                            <br>
+                                            <span class="full-address"> Saltwater Coast
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3030</span>
+                                            <br>
+                                            <span class="neighbourhood">Point Cook</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/wynbrook.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Wynbrook</span>
+                                            <br>
+                                            <span class="full-address"> Wynbrook
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3024</span>
+                                            <br>
+                                            <span class="neighbourhood">Wyndham Vale</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/townhouse">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Lynn Residences</span>
+                                            <br>
+                                            <span class="full-address"> Lynn Residences
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3149</span>
+                                            <br>
+                                            <span class="neighbourhood">Mount Waverley</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/bloomdale.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Casa Del Mar</span>
+                                            <br>
+                                            <span class="full-address"> 76 Albert Street
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3195</span>
+                                            <br>
+                                            <span class="neighbourhood">Mordialloc</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="residence-placeholder col-lg-4 col-md-6 col-sm-12"></div>
                     </div>
                 </div>
 
-                <div id="ny" class="tab-pane fade">
+                <div id="ap" class="tab-pane fade">
                     <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
-                            <a href="/newyork/77-charlton">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="/camberwell">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/77charlton-thumbnail.jpg">
+                                        <img src="/images/apartments/555-Collins-Flipbook-11.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address"> 77 Charlton</span>
+                                            <span class="main-address"> 555 Colins</span>
                                             <br>
-                                            <span class="full-address"> Charlton Street
+                                            <span class="full-address"> 555 Colins Street
                                                 <span class="dot"></span>
-                                                New York, NY 10014</span>
+                                                Victoria, VIC 3000</span>
                                             <br>
-                                            <span class="neighbourhood">West Soho</span>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/new-york/91-leonard">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/91leonard1-thumbnail.jpg">
+                                        <img src="/images/apartments/Botanic.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">91 Leonard</span>
+                                            <span class="main-address">Botanic</span>
                                             <br>
-                                            <span class="full-address"> 91 Leonard street
+                                            <span class="full-address"> 25 Coventry Street
                                                 <span class="dot"></span>
-                                                New York, NY 10013</span>
+                                                Victoria, VIC 3006</span>
                                             <br>
-                                            <span class="neighbourhood">Tribeca</span>
+                                            <span class="neighbourhood">Southbank</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newyork/121-east-22nd">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/121east22nd1-thumb.jpg">
+                                        <img src="/images/apartments/clare.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">121 East 22nd</span>
+                                            <span class="main-address">Claremont Manor</span>
                                             <br>
-                                            <span class="full-address"> 121 East 22nd Street
+                                            <span class="full-address"> 7 Claremont Street
                                                 <span class="dot"></span>
-                                                New York, NY 10010</span>
+                                                Victoria, VIC 3141</span>
                                             <br>
-                                            <span class="neighbourhood">Gramercy</span>
+                                            <span class="neighbourhood">South Yarra</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newyork/the-sutton">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/sutton-1-thumb.jpg">
+                                        <img src="/images/apartments/hawthorn.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">The Sutton</span>
+                                            <span class="main-address">Hawthorn Club</span>
                                             <br>
-                                            <span class="full-address"> 959 First Ave
+                                            <span class="full-address"> 625 Glenferrie Road
                                                 <span class="dot"></span>
-                                                New York, NY 10022</span>
+                                                Victoria, VIC 3122</span>
                                             <br>
-                                            <span class="neighbourhood">Sutton Place</span>
+                                            <span class="neighbourhood">Hawthorn</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                    </div>
-                </div>
-
-                <div id="nj" class="tab-pane fade">
-                    <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newjersey/1000-maxwell">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/1000maxwell-thumbnail.jpg">
+                                        <img src="/images/apartments/luma.jpeg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">1000 Maxwell</span>
+                                            <span class="main-address">Luma Windsor</span>
                                             <br>
-                                            <span class="full-address"> 1000 Maxwell Place
+                                            <span class="full-address"> 6 High Street
                                                 <span class="dot"></span>
-                                                Hoboken, NJ 07030</span>
+                                                Victoria, VIC 3181</span>
                                             <br>
-                                            <span class="neighbourhood">Hoboken</span>
+                                            <span class="neighbourhood">Windsor</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newjersey/1425-hudson">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/1425hudson1-thumb.jpg">
+                                        <img src="/images/apartments/newschar.png">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">1425 Hudson Street at Hudson Tea</span>
+                                            <span class="main-address">New Charsfield</span>
                                             <br>
-                                            <span class="full-address"> 1425 Hudson Street
+                                            <span class="full-address"> 478 Saint Kilda Road
                                                 <span class="dot"></span>
-                                                Hoboken, NJ 07030</span>
+                                                Victoria, VIC 3004</span>
                                             <br>
-                                            <span class="neighbourhood">Hoboken</span>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/newjersey/10-provost">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/10provost-thumbnailv2.jpg">
+                                        <img src="/images/apartments/queensplace.jpg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">10 Provost</span>
+                                            <span class="main-address">Queens Place</span>
                                             <br>
-                                            <span class="full-address"> 10 Provost Street
+                                            <span class="full-address"> 350 Queens Street
                                                 <span class="dot"></span>
-                                                Jersey City, NJ 07302</span>
+                                                Victoria, VIC 3000</span>
                                             <br>
-                                            <span class="neighbourhood">Jersey City</span>
+                                            <span class="neighbourhood">Melbourne</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                    </div>
-                </div>
-
-                <div id="dc" class="tab-pane fade">
-                    <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="/dc-metro/hampden-row">
                                 <div class="list-wrapper">
                                     <div class="img-wrapper">
-                                        <img src="/images/hampdenrow-thumbnail.jpg">
+                                        <img src="/images/apartments/swanston.jpeg">
                                     </div>
                                     <div class="listing">
                                         <div class="address-list">
-                                            <span class="main-address">Hampden Row</span>
+                                            <span class="main-address">Swanston Central</span>
                                             <br>
-                                            <span class="full-address"> 4915 Hampden Lane
+                                            <span class="full-address"> 168 Victoria Street
                                                 <span class="dot"></span>
-                                                Bethesda, MD 20814</span>
+                                                Victoria, VIC 3053</span>
                                             <br>
-                                            <span class="neighbourhood">Downtown Bethesda</span>
+                                            <span class="neighbourhood">Carlton</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/apartments/thefawk.jpeg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">The Fawkner</span>
+                                            <br>
+                                            <span class="full-address"> 499 Saint Kilda Road
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3004</span>
+                                            <br>
+                                            <span class="neighbourhood">Melbourne</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/apartments/westside.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">West Side Place Ritz Carlton</span>
+                                            <br>
+                                            <span class="full-address"> 250 Spencer Street
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3000</span>
+                                            <br>
+                                            <span class="neighbourhood">Melbourne</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="residence-placeholder col-lg-4 col-md-6 col-sm-12"></div>
+                        <div class="residence-placeholder col-lg-4 col-md-6 col-sm-12"></div>
                     </div>
                 </div>
 
-                <div id="ph" class="tab-pane fade">
+                <div id="hl" class="tab-pane fade">
                     <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="" onclick="return false;">
                                 <div class="list-wrapper">
-                                    <div class="coming-soon">
-                                        <p>Coming Soon</p>
-                                        <div class="img-wrapper">
-                                            <img src="/images/jewelersrow-thumbnail.jpg">
-                                        </div>
-                                        <div class="listing">
-                                            <div class="address-list">
-                                                <span class="main-address">708 Sansom Street</span>
-                                                <br>
-                                                <span class="full-address"> 708 Sansom Street
-                                                    <span class="dot"></span>
-                                                    Philadelphia, PA 19106</span>
-                                                <br>
-                                                <span class="neighbourhood">Washington Square West</span>
-                                            </div>
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/camberwell.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Camberwell House</span>
+                                            <br>
+                                            <span class="full-address"> 43 Range Street
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3124</span>
+                                            <br>
+                                            <span class="neighbourhood">Camberwell</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/bloomdale.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Bloomdale, Diggers Rest</span>
+                                            <br>
+                                            <span class="full-address"> Diggers Rest
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3427</span>
+                                            <br>
+                                            <span class="neighbourhood">Bloomdale</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/bloomdale.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Emerald Park</span>
+                                            <br>
+                                            <span class="full-address"> Emerald Park
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3029</span>
+                                            <br>
+                                            <span class="neighbourhood">Tarneit</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/saltwater.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Saltwater Coast</span>
+                                            <br>
+                                            <span class="full-address"> Saltwater Coast
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3030</span>
+                                            <br>
+                                            <span class="neighbourhood">Point Cook</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
+                            <a href="" onclick="return false;">
+                                <div class="list-wrapper">
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/wynbrook.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Wynbrook</span>
+                                            <br>
+                                            <span class="full-address"> Wynbrook
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3024</span>
+                                            <br>
+                                            <span class="neighbourhood">Wyndham Vale</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="residence-placeholder col-lg-4 col-md-6 col-sm-12"></div>
                     </div>
                 </div>
 
-                <div id="se" class="tab-pane fade">
+                <div id="th" class="tab-pane fade">
                     <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="" onclick="return false;">
                                 <div class="list-wrapper">
-                                    <div class="coming-soon">
-                                        <p>Coming Soon</p>
-                                        <div class="img-wrapper">
-                                            <img src="/images/thumbnailv2.jpg">
-                                        </div>
-                                        <div class="listing">
-                                            <div class="address-list">
-                                                <span class="main-address">The Franklin</span>
-                                                <br>
-                                                <span class="full-address"> 2302 4th Ave
-                                                    <span class="dot"></span>
-                                                    Seattle, WA 98109</span>
-                                                <br>
-                                                <span class="neighbourhood">Belltown</span>
-                                            </div>
+                                    <div class="img-wrapper">
+                                        <img src="/images/townhouse/lynn.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Lynn Residences</span>
+                                            <br>
+                                            <span class="full-address"> Lynn Residences
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3149</span>
+                                            <br>
+                                            <span class="neighbourhood">Mount Waverley</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                    </div>
-                </div>
-
-                <div id="la" class="tab-pane fade">
-                    <div class="row">
-                        <div class="building col-lg-3 col-md-4 col-sm-12">
+                        <div class="building col-lg-4 col-md-6 col-sm-12">
                             <a href="" onclick="return false;">
                                 <div class="list-wrapper">
-                                    <div class="coming-soon">
-                                        <p>Coming Soon</p>
-                                        <div class="img-wrapper">
-                                            <img src="/images/devon-thumbnailv2.jpg">
-                                        </div>
-                                        <div class="listing">
-                                            <div class="address-list">
-                                                <span class="main-address">The Devon</span>
-                                                <br>
-                                                <span class="full-address"> 888 Devon Ave
-                                                    <span class="dot"></span>
-                                                    Los Angeles, CA 90024</span>
-                                                <br>
-                                                <span class="neighbourhood">Westwood</span>
-                                            </div>
+                                    <div class="img-wrapper">
+                                        <img src="/images/house/bloomdale.jpg">
+                                    </div>
+                                    <div class="listing">
+                                        <div class="address-list">
+                                            <span class="main-address">Casa Del Mar</span>
+                                            <br>
+                                            <span class="full-address"> 76 Albert Street
+                                                <span class="dot"></span>
+                                                Victoria, VIC 3195</span>
+                                            <br>
+                                            <span class="neighbourhood">Mordialloc</span>
                                         </div>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
-                        <div class="residence-placeholder col-lg-3 col-md-4 col-sm-12"></div>
+                        <div class="residence-placeholder col-lg-4 col-md-6 col-sm-12"></div>
                     </div>
                 </div>
             </div>
@@ -726,27 +897,29 @@
 
     <div class="quote">
         <center>
-            <p>"THIS IS MY SIXTH TOLL BROTHERS UNIT THAT I HAVE PURCHASED. I HAVE NEVER BEEN DISAPPOINTED WITH THE
-                TOLL
-                BROTHERS FAMILY. SO WHEN LOOKING FOR MY OWN HOME, <b>I KNEW I COULD TRUST THE TOLL NAME</b> FOR
-                QUALITY
-                OF WORK, VALUE, RESALE VALUE, DESIGN AND EXCELLENT <b>'SERVICE AFTER THE SALE'</b>."
+            <p>"Tim was an <b>excellent agent</b> and property manager. He helped me in discussions with the
+                Landlord and
+                handled any questions or concerns with the <b>upmost professionalism</b>. I found him very easy to work
+                with
+                and thank him for his cooperation to come to agreements with <b>open communication</b>, <b>trust and
+                    care</b>. I will
+                not hesitate to recommend Tim to any future Landlords or Tenants. <b>You are in good hands</b>.
                 </br>
-                <cite><b>MICHAEL G.</b></cite>
+                <cite><b>Leah K.</b></cite>
             </p>
         </center>
     </div>
 
     <div class="testimonials">
         <form action="/testimonials.html" method="get" target="_top">
-            <button type="submit">Read More testimonials</button>
+            <button type="submit" ; onclick="return false;">Read More testimonials</button>
         </form>
     </div>
 
     <div class="footer">
-        <a href="/"> Toll Brothers</br> CITY LIVING</a>
+        <a href="/"> <img src="/images/Found-LOGO2W.png"></img></br> Your Property and Investment Navigator</a>
     </div>
-
+    <!--
     <div class="footer-nav">
         <a href="/sitemap">Site Map</a>
         <span class="dot"></span>
@@ -755,7 +928,7 @@
         <a href="/legal">Legal</a>
         <i class="fa fa-university" style="font-size: 15px; margin-left: 20px; color: white;"></i>
     </div>
-
+-->
 
 
 
