@@ -290,11 +290,22 @@ video {
   text-decoration: none;
   font-size: 18px;
   z-index: 6;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 .main-title a:hover {
-  font-weight: 550;
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
+  color: white !important;
+  text-stroke: 0.4px white;
+        -webkit-text-stroke: 0.4px white;
+}
+
+.main-title a:focus {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .main-title li {
@@ -403,6 +414,7 @@ video {
   font-weight: 700;
 }
 
+
 .port-nav a {
   text-decoration: none !important;
   margin: 0px 28px;
@@ -416,35 +428,30 @@ video {
 
 .port-nav a:hover {
   text-decoration: none;
-  font-weight: 750;
   transition: all .3s ease-in-out;
   color: inherit;
 }
 
-.nav-tabs > li {
+.nav-pills > li {
   float: none !important;
   display:inline-block !important;
 }
 
-.nav-tabs {
+.nav-pills {
   text-align:center !important;
   border-bottom: none !important;
   padding: 0px 20px 20px 20px;
 }
 
-.nav-tabs a {
-  border: none !important;
-}
-
-.port-nav a:focus {
-  text-decoration: none !important;
+.nav-pills>li.active>a {
+  background-color: transparent !important;
+  font-weight: bold !important;
   color: black !important;
-  font-weight: 750;
   border-bottom: rgba(116, 116, 116, 1) !important;
   border-bottom-style: solid !important;
   padding-bottom: 5px !important;
   border-bottom-width: 2px !important;
-  animation: fadeIn 0.35s ease-out;
+  border-radius: 0%;
 }
 
 @keyframes fadeIn {
@@ -464,31 +471,31 @@ video {
   padding: 0px;
 }
 
-.body img {
-  height: 703px;
+.tab-content img {
+  height: 453px;
   object-fit: cover;
   width: 100%;
   display: block;
   text-align: center;
 }
 
-.body .full-address {
+.full-address {
   color: rgb(168, 168, 168);
   font-size: 11px;
 }
 
-.body .neighbourhood {
-  font-size: 11px;
+.neighbourhood {
+  font-size: 13px;
 }
 
-.body .listing {
+.listing {
   text-decoration: none;
   position: absolute;
   bottom: 0px;
   background-color: rgba(0,0,0,.8);
   color: white;
   width: 101%;
-  height: 115px;
+  height: 105px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -499,13 +506,13 @@ video {
   display: table;
 }
 
-.body .listing > .address-list {
+.listing > .address-list {
 display: table-cell;
 vertical-align: middle;
 text-align: center;
 }
 
-.body .dot {
+.dot {
   height: 3px;
   width: 3px;
   background-color: #bbb;
@@ -515,7 +522,7 @@ text-align: center;
   margin: 0px 10px;
 }
 
-.body .img-wrapper {
+.img-wrapper {
   transition: all .25s ease-in-out;
 }
 
@@ -566,15 +573,28 @@ text-align: center;
   padding: 0 !important;
 }
 
+.for-rent h3 {
+  margin-top: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+#clarendon img {
+  transform: scale(1.07);
+}
+
 .quote p {
-  padding-top: 15px;
+  padding-top: 25px;
   color: black;
   font-size: 15px;
   line-height: 1.75rem;
   margin: auto;
   max-width: 1150px;
   padding: 30px 55px;
-  font-size: 24px;
+  font-size: 2rem;
   letter-spacing: 2px;
   line-height: 1.4em;
   font-weight: 330;
@@ -625,6 +645,7 @@ text-align: center;
 .footer a {
   text-decoration: none;
   color: white;
+  font-size: 1.5rem;
 }
 
 .footer a:hover {
